@@ -1,0 +1,151 @@
+main{
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: calc(-1.6875rem);
+}
+form input{
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  outline: none;
+
+  font-weight: 400;
+}
+form button {
+  width: 5.625rem;
+
+  color: var(--gray-100);
+  background-color: var(--dark-blue-color);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  transition: .5s;
+
+  font-weight: 700;
+}
+form button:disabled{
+  opacity: 0.7;
+  cursor: no-drop;
+}
+form button:hover{
+  transition: .5s;
+  background-color: var(--blue-color);
+}
+form input:focus{
+  border: 1px solid var(--dark-purple-color);
+
+}
+form button,
+form input{
+  height: 3.375rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+form,
+main section header,
+.tasksList{
+  margin-inline: 22rem;
+}
+main section header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section header .createdTasks,
+main section header .finishedTasks{
+  display: flex;
+  gap: 0.5rem;
+}
+main section header .createdTasks h3{
+  color: var(--blue-color);
+}
+main section header .finishedTasks h3{
+  color: var(--purple-color);
+}
+main section header .createdTasks h3,
+main section header .finishedTasks h3{
+  font-size:0.875rem ;
+}
+/* main section header .createdTasks p{
+  width: 1.5rem;
+  padding-inline: .5rem;
+  border-radius: 62.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* main section header .finishedTasks p{
+  width: 3.5rem;
+  padding-inline: .5rem;
+  border-radius: 62.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+main section header .createdTasks p,
+main section header .finishedTasks p{
+  width: 1.5rem;
+  padding-inline: .5rem;
+  border-radius: 62.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: .75rem;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+}
+.textContentTaskList h3{
+  font-size: 1rem;
+}
+.tasksList:nth-child(1) .tasksList{
+  padding: 0;
+}
+.tasksList{
+
+  font-size: 1rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: .5rem;
+  margin-top: 1.5rem;
+  color: var(--gray-300);
+
+  height: 15.25rem;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.tasksList h3:last-child{
+  font-weight: 400;
+}
+.contentTaskList{
+  border: none ;
+  padding-top: 4rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contentTaskList:disabled{
+  display: none;
+} 
+.contentTaskList img{
+  width: 3.5rem;
+  height: 3.5rem;
+}
